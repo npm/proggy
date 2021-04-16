@@ -1,6 +1,7 @@
 # ignore most things, include some others
 /*
 /.*
+!example.js
 !.eslintrc.json
 !bin/
 !lib/
