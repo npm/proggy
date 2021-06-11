@@ -132,6 +132,51 @@ Array [
 ]
 `
 
+exports[`test/client.js TAP normalize data > progress data 10`] = `
+Array [
+  "key",
+  Object {
+    "actualTotal": 50,
+    "actualValue": 45,
+    "done": false,
+    "key": "key",
+    "name": "key",
+    "total": 100,
+    "value": 90,
+  },
+]
+`
+
+exports[`test/client.js TAP normalize data > progress data 11`] = `
+Array [
+  "key",
+  Object {
+    "actualTotal": 50,
+    "actualValue": 45,
+    "done": false,
+    "key": "key",
+    "name": "key",
+    "total": 100,
+    "value": 90,
+  },
+]
+`
+
+exports[`test/client.js TAP normalize data > progress data 12`] = `
+Array [
+  "key",
+  Object {
+    "actualTotal": 420,
+    "actualValue": 9001,
+    "done": true,
+    "key": "key",
+    "name": "key",
+    "total": 100,
+    "value": 100,
+  },
+]
+`
+
 exports[`test/client.js TAP normalize data > progress data 2`] = `
 Array [
   "key",
@@ -241,13 +286,13 @@ exports[`test/client.js TAP normalize data > progress data 9`] = `
 Array [
   "key",
   Object {
-    "actualTotal": 420,
-    "actualValue": 9001,
-    "done": true,
+    "actualTotal": 50,
+    "actualValue": 45,
+    "done": false,
     "key": "key",
     "name": "key",
     "total": 100,
-    "value": 100,
+    "value": 90,
   },
 ]
 `
