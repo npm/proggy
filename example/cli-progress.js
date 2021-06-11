@@ -1,5 +1,5 @@
 const chalk = require('chalk')
-const proggy = require('./')
+const proggy = require('../')
 
 // set up our display thing
 const cliProgress = require('cli-progress')
