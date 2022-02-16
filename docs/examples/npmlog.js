@@ -1,11 +1,9 @@
-const chalk = require('chalk')
-const proggy = require('../')
+const proggy = require('../../lib')
 
 // set up our display thing
 const npmlog = require('npmlog')
 npmlog.enableProgress()
 const group = npmlog.newGroup('npmlog example')
-
 
 // update it with events from the proggy client
 const client = proggy.createClient({
@@ -42,14 +40,13 @@ client.on('done', () => {
   npmlog.disableProgress()
 })
 
-
 // the thing that emits the events
 let b1value = 0
 let b1total = 100
 let b2value = 0
-let b2total = 200
+const b2total = 200
 let b3value = 0
-let b3total = 50
+const b3total = 50
 
 const b1 = proggy.createTracker('bar 1')
 const b2 = proggy.createTracker('bar 2')
@@ -60,21 +57,24 @@ const interval = setInterval(() => {
   const inc = Math.ceil(Math.random() * 10)
 
   if (b1value < b1total) {
-    if ((i++%2 === 0) && b1total < 2000)
-      b1total += inc*3
-    else
+    if ((i++ % 2 === 0) && b1total < 2000) {
+      b1total += inc * 3
+    } else {
       b1value += inc
+    }
     b1.update(Math.min(b1total, b1value), b1total)
   }
 
-  if (b2value < b2total)
+  if (b2value < b2total) {
     b2.update(Math.min(b2total, b2value += inc), b2total)
+  }
 
   if (b3value < b3total) {
     b3value = Math.ceil(b3value + 0.003 * (b3total + b3value))
     b3.update(Math.min(b3value, b3total), b3total)
   }
 
-  if (b1value >= b1total && b2value>=b2total && b3value>=b3total)
+  if (b1value >= b1total && b2value >= b2total && b3value >= b3total) {
     clearInterval(interval)
+  }
 }, 50)
