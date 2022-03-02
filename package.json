@@ -24,7 +24,7 @@
     "lintfix": "npm run lint -- --fix"
   },
   "devDependencies": {
-    "@npmcli/template-oss": "^2.8.1",
+    "@npmcli/template-oss": "^2.9.0",
     "chalk": "^4.1.2",
     "cli-progress": "^3.10.0",
     "npmlog": "^6.0.1",
