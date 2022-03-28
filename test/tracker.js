@@ -39,8 +39,8 @@ t.test('emit some events', t => {
 t.test('finish() alias for update(total, total)', t => {
   const runTest = data => t => {
     const tracker = new Tracker('hello', 'key', 10)
-    tracker.on('done', data => {
-      t.matchSnapshot(data, 'data received by done event')
+    tracker.on('done', doneData => {
+      t.matchSnapshot(doneData, 'data received by done event')
       t.end()
     })
     tracker.finish(data)
