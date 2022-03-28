@@ -2,12 +2,15 @@
   "name": "proggy",
   "version": "1.0.0",
   "files": [
-    "bin",
-    "lib"
+    "bin/",
+    "lib/"
   ],
   "main": "lib/index.js",
   "description": "Progress bar updates at a distance",
-  "repository": "https://github.com/npm/proggy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/proggy.git"
+  },
   "author": "GitHub Inc.",
   "license": "ISC",
   "scripts": {
@@ -18,13 +21,14 @@
     "preversion": "npm test",
     "postversion": "npm publish",
     "prepublishOnly": "git push origin --follow-tags",
-    "lint": "eslint '**/*.js'",
-    "postlint": "npm-template-check",
-    "template-copy": "npm-template-copy --force",
-    "lintfix": "npm run lint -- --fix"
+    "lint": "eslint \"**/*.js\"",
+    "postlint": "template-oss-check",
+    "lintfix": "npm run lint -- --fix",
+    "template-oss-apply": "template-oss-apply --force"
   },
   "devDependencies": {
-    "@npmcli/template-oss": "^3.2.0",
+    "@npmcli/eslint-config": "^3.0.1",
+    "@npmcli/template-oss": "3.2.0",
     "chalk": "^4.1.2",
     "cli-progress": "^3.10.0",
     "npmlog": "^6.0.1",
@@ -34,9 +38,10 @@
     "coverage-map": "map.js"
   },
   "engines": {
-    "node": "^12.13.0 || ^14.15.0 || >=16"
+    "node": "^12.13.0 || ^14.15.0 || >=16.0.0"
   },
   "templateOSS": {
-    "version": "2.9.2"
+    "//@npmcli/template-oss": "This file is partially managed by @npmcli/template-oss. Edits may be overwritten.",
+    "version": "3.2.0"
   }
 }
