@@ -24,7 +24,7 @@
     "template-oss-apply": "template-oss-apply --force"
   },
   "devDependencies": {
-    "@npmcli/eslint-config": "^3.0.1",
+    "@npmcli/eslint-config": "^4.0.0",
     "@npmcli/template-oss": "4.5.1",
     "chalk": "^4.1.2",
     "cli-progress": "^3.10.0",
