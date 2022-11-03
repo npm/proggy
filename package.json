@@ -6,6 +6,7 @@
     "lib/"
   ],
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "description": "Progress bar updates at a distance",
   "repository": {
     "type": "git",
