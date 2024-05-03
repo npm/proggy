@@ -15,7 +15,7 @@ t.test('basic', t => {
   t.equal(c.listening, true, 'still listening')
 
   c.stop()
-  c.once('progress', (key, data) => {})
+  c.once('progress', () => {})
   t.equal(c.listening, true, 'listening because once handler added')
   c.emit('progress')
   t.equal(c.listening, false, 'not listening because once handler removed')
@@ -24,7 +24,7 @@ t.test('basic', t => {
   t.equal(c.listening, true, 'listening, because progress event handler added')
 
   let sawProgress = false
-  c.once('progress', (key, data) => {
+  c.once('progress', () => {
     sawProgress = true
   })
 

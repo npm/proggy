@@ -34,7 +34,7 @@ client.on('progress', (key, data) => {
   bars[key].setTotal(data.total)
 })
 // a bar is done, tell multibar to stop updating it
-client.on('barDone', (key, data) => {
+client.on('barDone', (key) => {
   bars[key].stop()
 })
 // all bars done, tell multibar to close entirely
