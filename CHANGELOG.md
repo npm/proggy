@@ -1,5 +1,14 @@
 # Changelog
 
+## [4.0.0](https://github.com/npm/proggy/compare/v3.0.0...v4.0.0) (2025-10-22)
+### ⚠️ BREAKING CHANGES
+* align to npm 11 node engine range (#100)
+### Bug Fixes
+* [`9ddf28f`](https://github.com/npm/proggy/commit/9ddf28f6b9644a87cdc4de00795441abbbbd8ec2) [#100](https://github.com/npm/proggy/pull/100) align to npm 11 node engine range (#100) (@owlstronaut)
+### Chores
+* [`9f59807`](https://github.com/npm/proggy/commit/9f59807e53f34bfe754bc1934ddeb540ddbd6348) [#94](https://github.com/npm/proggy/pull/94) postinstall workflow updates (#94) (@owlstronaut)
+* [`76c68e4`](https://github.com/npm/proggy/commit/76c68e47ffccfcf2d72f413f1faa8ca636ebb108) [#99](https://github.com/npm/proggy/pull/99) bump @npmcli/template-oss from 4.26.0 to 4.27.1 (#99) (@dependabot[bot], @npm-cli-bot)
+
 ## [3.0.0](https://github.com/npm/proggy/compare/v2.0.0...v3.0.0) (2024-09-24)
 ### ⚠️ BREAKING CHANGES
 * `proggy` now supports node `^18.17.0 || >=20.5.0`
