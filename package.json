@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@npmcli/eslint-config": "^6.0.0",
-    "@npmcli/template-oss": "4.29.0",
+    "@npmcli/template-oss": "4.30.0",
     "chalk": "^4.1.2",
     "cli-progress": "^3.10.0",
     "npmlog": "^7.0.0",
