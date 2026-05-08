@@ -1,5 +1,17 @@
 # Changelog
 
+## [5.0.0](https://github.com/npm/proggy/compare/v4.0.0...v5.0.0) (2026-05-08)
+### ⚠️ BREAKING CHANGES
+* `proggy` now supports node `^22.22.2 || ^24.15.0 || >=26.0.0`
+* template-oss-apply
+### Features
+* [`d7f393b`](https://github.com/npm/proggy/commit/d7f393b2eff40d3b9f0f0af5523e6188729f2f46) [#109](https://github.com/npm/proggy/pull/109) bump to new node engine range (@owlstronaut)
+* [`4f6506f`](https://github.com/npm/proggy/commit/4f6506f6854ed623b78e6067df2a9a1baac894e3) [#109](https://github.com/npm/proggy/pull/109) template-oss-apply (@owlstronaut)
+### Chores
+* [`097fe68`](https://github.com/npm/proggy/commit/097fe68a6ee8c05cd30fcd9c4b5de2fd1ed6f837) [#109](https://github.com/npm/proggy/pull/109) template-oss-apply (@owlstronaut)
+* [`03552d5`](https://github.com/npm/proggy/commit/03552d587150252f59ff07d0b0c036ffcc5b849b) [#102](https://github.com/npm/proggy/pull/102) bump @npmcli/eslint-config from 5.1.0 to 6.0.0 (#102) (@dependabot[bot])
+* [`64f27e0`](https://github.com/npm/proggy/commit/64f27e0f263724f77ac1cf2fabc23d1e9220304e) [#107](https://github.com/npm/proggy/pull/107) bump @npmcli/template-oss from 4.29.0 to 4.30.0 (#107) (@dependabot[bot], @npm-cli-bot)
+
 ## [4.0.0](https://github.com/npm/proggy/compare/v3.0.0...v4.0.0) (2025-10-22)
 ### ⚠️ BREAKING CHANGES
 * align to npm 11 node engine range (#100)
